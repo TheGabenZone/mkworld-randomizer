@@ -204,6 +204,75 @@ footer {
     position: relative;
 }
 
+#settings-cog {
+    position: fixed;
+    bottom: 2.2rem;
+    right: 2.2rem;
+    background: rgba(36, 22, 13, 0.92);
+    border: 2px solid #6e3b1a;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1001;
+    box-shadow: 0 2px 8px #24160d;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+#settings-cog:hover {
+    background: #3a2320;
+    box-shadow: 0 4px 16px #c96b3c44;
+}
+#settings-cog svg {
+    display: block;
+}
+
+#settings-panel {
+    position: fixed;
+    bottom: 4.5rem;
+    right: 2.2rem;
+    background: rgba(36, 22, 13, 0.98);
+    border: 2px solid #6e3b1a;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px #24160d99;
+    padding: 2rem 2.5rem 1.5rem 2.5rem;
+    min-width: 260px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.2s, transform 0.2s;
+}
+#settings-panel.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px) scale(0.98);
+}
+#settings-panel h3 {
+    color: #c96b3c;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    text-align: left;
+    letter-spacing: 1px;
+}
+.settings-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 1.1rem;
+    color: #ffe7d0;
+    cursor: pointer;
+}
+.settings-toggle input[type="checkbox"] {
+    accent-color: #c96b3c;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
 @media (max-width: 768px) {
     .container {
         padding: 1rem;
@@ -233,5 +302,17 @@ footer {
     .bar-outer {
         width: 20px;
         height: 80px;
+    }
+    #settings-cog {
+        bottom: 1rem;
+        right: 1rem;
+        width: 44px;
+        height: 44px;
+    }
+    #settings-panel {
+        bottom: 3.5rem;
+        right: 1rem;
+        min-width: 180px;
+        padding: 1.2rem 1.2rem 1rem 1.2rem;
     }
 } 

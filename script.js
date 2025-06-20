@@ -56,6 +56,107 @@ const npcs = [
 ];
 
 const outfits = [
+    { name: 'Touring Mario', image: 'https://mario.wiki.gallery/images/6/67/Mariotourmkworld.png', stats: { speed: 6, acceleration: 6, weight: 6, handling: 6 } },
+    { name: 'Pro Racer Mario', image: 'https://mario.wiki.gallery/images/f/fd/MKWorld_Mario_Pro_Racer_Outfit.png', stats: { speed: 6, acceleration: 6, weight: 6, handling: 6 } },
+    { name: 'Mechanic Mario', image: 'https://mario.wiki.gallery/images/6/6f/MKWorld_Mechanic_Mario.png', stats: { speed: 6, acceleration: 6, weight: 6, handling: 6 } },
+    { name: 'Dune Rider Mario', image: 'https://mario.wiki.gallery/images/0/00/MKWorld_Mario_Costume_6.png', stats: { speed: 6, acceleration: 6, weight: 6, handling: 6 } },
+    { name: 'Cowboy Mario', image: 'https://mario.wiki.gallery/images/6/68/Mario_Cowboy_MKWorld_Select.png', stats: { speed: 6, acceleration: 6, weight: 6, handling: 6 } },
+    { name: 'Sightseeing Mario', image: 'https://mario.wiki.gallery/images/e/e5/Sightseeing_MarioSelect.png', stats: { speed: 6, acceleration: 6, weight: 6, handling: 6 } },
+    { name: 'Aviator Mario', image: 'https://mario.wiki.gallery/images/3/34/MKWorld_Mario_Costume_3.png', stats: { speed: 6, acceleration: 6, weight: 6, handling: 6 } },
+    { name: 'Happi Mario', image: 'https://mario.wiki.gallery/images/c/c8/Mhmkworld.png', stats: { speed: 6, acceleration: 6, weight: 6, handling: 6 } },
+    { name: 'All-Terrain Mario', image: 'https://mario.wiki.gallery/images/6/6e/Mario_All_Terrain.png', stats: { speed: 6, acceleration: 6, weight: 6, handling: 6 } },
+    { name: 'Touring Luigi', image: 'https://mario.wiki.gallery/images/6/60/Luigitourmkworld.png', stats: { speed: 6, acceleration: 6, weight: 6, handling: 6 } },
+    { name: 'Pro Racer Luigi', image: 'https://mario.wiki.gallery/images/5/5f/Luigi_Pro_Racer.png', stats: { speed: 6, acceleration: 6, weight: 6, handling: 6 } },
+    { name: 'Mechanic Luigi', image: 'https://mario.wiki.gallery/images/d/dc/MKWorld_Luigi_Mechanic_alt.png', stats: { speed: 6, acceleration: 6, weight: 6, handling: 6 } },
+    { name: 'Farmer Luigi', image: 'https://mario.wiki.gallery/images/9/9e/Luigi_Farmer_MKWorld_Select.png', stats: { speed: 6, acceleration: 6, weight: 6, handling: 6 } },
+    { name: 'Happi Luigi', image: 'https://mario.wiki.gallery/images/e/ec/Lhmkworld.png', stats: { speed: 6, acceleration: 6, weight: 6, handling: 6 } },
+    { name: 'All-Terrain Luigi', image: 'https://mario.wiki.gallery/images/b/b6/MKWorld_Luigi_All-Terrain_alt.png', stats: { speed: 6, acceleration: 6, weight: 6, handling: 6 } },
+    { name: 'Oasis Luigi', image: 'https://mario.wiki.gallery/images/f/ff/MKWorld_Luigi_Oasis_alt.png', stats: { speed: 6, acceleration: 6, weight: 6, handling: 6 } },
+    { name: 'Gondolier Luigi', image: 'https://mario.wiki.gallery/images/5/58/Luigi_Gondolier.png', stats: { speed: 6, acceleration: 6, weight: 6, handling: 6 } },
+    { name: 'Touring Peach', image: 'https://mario.wiki.gallery/images/4/4d/Peachtourmkworld.png', stats: { speed: 5, acceleration: 7, weight: 5, handling: 7 } },
+    { name: 'Pro Racer Peach', image: 'https://mario.wiki.gallery/images/a/a6/MKWorld_Peach_Costume_1.png', stats: { speed: 5, acceleration: 7, weight: 5, handling: 7 } },
+    { name: 'Farmer Peach', image: 'https://mario.wiki.gallery/images/7/74/Peach_Farmer_MKWorld_Select.png', stats: { speed: 5, acceleration: 7, weight: 5, handling: 7 } },
+    { name: 'Sightseeing Peach', image: 'https://mario.wiki.gallery/images/b/b8/MKWorld_Peach_Sightseeing_alt.png', stats: { speed: 5, acceleration: 7, weight: 5, handling: 7 } },
+    { name: 'Aviator Peach', image: 'https://mario.wiki.gallery/images/e/ee/MKWorld_Peach_Aviator_alt.png', stats: { speed: 5, acceleration: 7, weight: 5, handling: 7 } },
+    { name: 'Yukata Peach', image: 'https://mario.wiki.gallery/images/b/b8/Phmkworld.png', stats: { speed: 5, acceleration: 7, weight: 5, handling: 7 } },
+    { name: 'Aero Peach', image: 'https://mario.wiki.gallery/images/b/b0/MKWorld_Peach_Costume_5.png', stats: { speed: 5, acceleration: 7, weight: 5, handling: 7 } },
+    { name: 'Touring Daisy', image: 'https://mario.wiki.gallery/images/a/ad/Daisytourmkworld.png', stats: { speed: 5, acceleration: 7, weight: 5, handling: 7 } },
+    { name: 'Pro Racer Daisy', image: 'https://mario.wiki.gallery/images/c/cc/MK_World_Daisy_black_scarf_costume.png', stats: { speed: 5, acceleration: 7, weight: 5, handling: 7 } },
+    { name: 'Oasis Daisy', image: 'https://mario.wiki.gallery/images/4/4e/Daisy_Oasis.png', stats: { speed: 5, acceleration: 7, weight: 5, handling: 7 } },
+    { name: 'Aero Daisy', image: 'https://mario.wiki.gallery/images/5/52/MKWorld_Daisy_Costume_3.png', stats: { speed: 5, acceleration: 7, weight: 5, handling: 7 } },
+    { name: 'Vacation Daisy', image: 'https://mario.wiki.gallery/images/6/64/MKWorld_Daisy_Vacation_alt.png', stats: { speed: 5, acceleration: 7, weight: 5, handling: 7 } },
+    { name: 'Touring Yoshi', image: 'https://mario.wiki.gallery/images/5/5d/Yoshitourmkworld.png', stats: { speed: 5, acceleration: 7, weight: 5, handling: 7 } },
+    { name: 'Pro Racer Yoshi', image: 'https://mario.wiki.gallery/images/f/f6/MKWorld_Yoshi_Pro_Racer_alt.png', stats: { speed: 5, acceleration: 7, weight: 5, handling: 7 } },
+    { name: 'Matsuri Yoshi', image: 'https://mario.wiki.gallery/images/8/8c/Ymmkworld.png', stats: { speed: 5, acceleration: 7, weight: 5, handling: 7 } },
+    { name: 'Swimwear Yoshi', image: 'https://mario.wiki.gallery/images/1/14/MKW_Orange_Yoshi_swim.png', stats: { speed: 5, acceleration: 7, weight: 5, handling: 7 } },
+    { name: 'Aristocrat Yoshi', image: 'https://mario.wiki.gallery/images/9/9d/MKW_Purple_Yoshi_top_hat.png', stats: { speed: 5, acceleration: 7, weight: 5, handling: 7 } },
+    { name: 'Soft Server Yoshi', image: 'https://mario.wiki.gallery/images/c/cc/Yoshi_Pink_MKWorld_Select.png', stats: { speed: 5, acceleration: 7, weight: 5, handling: 7 } },
+    { name: 'Biker Yoshi', image: 'https://mario.wiki.gallery/images/6/62/YoshiBikerSelect.png', stats: { speed: 5, acceleration: 7, weight: 5, handling: 7 } },
+    { name: 'Pro Racer Toad', image: 'https://mario.wiki.gallery/images/a/a5/MKWorld_Toad_Costume_3.png', stats: { speed: 4, acceleration: 8, weight: 4, handling: 8 } },
+    { name: 'Explorer Toad', image: 'https://mario.wiki.gallery/images/4/4a/MKWorld_Toad_Costume_1.png', stats: { speed: 4, acceleration: 8, weight: 4, handling: 8 } },
+    { name: 'Engineer Toad', image: 'https://mario.wiki.gallery/images/f/fd/MKWorld_Toad_train_outfit.png', stats: { speed: 4, acceleration: 8, weight: 4, handling: 8 } },
+    { name: 'Burger Bud Toad', image: 'https://mario.wiki.gallery/images/5/59/ToadBurgerSelect.png', stats: { speed: 4, acceleration: 8, weight: 4, handling: 8 } },
+    { name: 'Runner Koopa Troopa', image: 'https://mario.wiki.gallery/images/b/b0/Krtourmkworld.png', stats: { speed: 4, acceleration: 8, weight: 4, handling: 8 } },
+    { name: 'Pro Racer Koopa Troopa', image: 'https://mario.wiki.gallery/images/d/d3/MKWorld_Koopa_Troopa_Pro_Racer_alt.png', stats: { speed: 4, acceleration: 8, weight: 4, handling: 8 } },
+    { name: 'All-Terrain Koopa Troopa', image: 'https://mario.wiki.gallery/images/c/c9/MKWorld_Koopa_Troopa_All-Terrain_alt.png', stats: { speed: 4, acceleration: 8, weight: 4, handling: 8 } },
+    { name: 'Sailor Koopa Troopa', image: 'https://mario.wiki.gallery/images/3/31/MKWorld_Koopa_Troopa_Sailor_alt.png', stats: { speed: 4, acceleration: 8, weight: 4, handling: 8 } },
+    { name: 'Work Crew Koopa Troopa', image: 'https://mario.wiki.gallery/images/a/a4/MKWorld_Construction_Koopa.png', stats: { speed: 4, acceleration: 8, weight: 4, handling: 8 } },
+    { name: 'Bowser', image: 'https://mario.wiki.gallery/images/a/af/BowserMKworld.png', stats: { speed: 9, acceleration: 3, weight: 9, handling: 3 } },
+    { name: 'Pro Racer Bowser', image: 'https://mario.wiki.gallery/images/e/ec/MKWorld_Bowser_Pro_Racer_alt.png', stats: { speed: 9, acceleration: 3, weight: 9, handling: 3 } },
+    { name: 'All-Terrain Bowser', image: 'https://mario.wiki.gallery/images/7/72/Bowser_All_Terrain.png', stats: { speed: 9, acceleration: 3, weight: 9, handling: 3 } },
+    { name: 'Biker Bowser', image: 'https://mario.wiki.gallery/images/b/b4/Bowser_Biker.png', stats: { speed: 9, acceleration: 3, weight: 9, handling: 3 } },
+    { name: 'Supercharged Bowser', image: 'https://mario.wiki.gallery/images/0/0c/Bowser_Costume_1_MKWorld_Select.png', stats: { speed: 9, acceleration: 3, weight: 9, handling: 3 } },
+    { name: 'Pro Racer Wario', image: 'https://mario.wiki.gallery/images/9/9f/Wario_Racer.png', stats: { speed: 8, acceleration: 4, weight: 8, handling: 4 } },
+    { name: 'Oasis Wario', image: 'https://mario.wiki.gallery/images/9/99/Wario_Oasis.png', stats: { speed: 8, acceleration: 4, weight: 8, handling: 4 } },
+    { name: 'Biker Wario', image: 'https://mario.wiki.gallery/images/6/6c/Wario_Biker.png', stats: { speed: 8, acceleration: 4, weight: 8, handling: 4 } },
+    { name: 'Work Crew Wario', image: 'https://mario.wiki.gallery/images/a/a7/Wario_Construction.png', stats: { speed: 8, acceleration: 4, weight: 8, handling: 4 } },
+    { name: 'Pirate Wario', image: 'https://mario.wiki.gallery/images/4/49/Wario_Pirate.png', stats: { speed: 8, acceleration: 4, weight: 8, handling: 4 } },
+    { name: 'Wicked Wasp Wario', image: 'https://mario.wiki.gallery/images/3/36/Wario_Wicked_Wasp_MKWorld_Select.png', stats: { speed: 8, acceleration: 4, weight: 8, handling: 4 } },
+    { name: 'Road Ruffian Wario', image: 'https://mario.wiki.gallery/images/b/b0/Wario_Road_Ruffian.png', stats: { speed: 8, acceleration: 4, weight: 8, handling: 4 } },
+    { name: 'Pro Racer Waluigi', image: 'https://mario.wiki.gallery/images/9/93/Waluigi_Dune_Rider.png', stats: { speed: 8, acceleration: 4, weight: 8, handling: 4 } },
+    { name: 'Biker Waluigi', image: 'https://mario.wiki.gallery/images/8/87/Waluigi_Biker.png', stats: { speed: 8, acceleration: 4, weight: 8, handling: 4 } },
+    { name: 'Road Ruffian Waluigi', image: 'https://mario.wiki.gallery/images/a/a6/Waluigi_Road_Ruffian.png', stats: { speed: 8, acceleration: 4, weight: 8, handling: 4 } },
+    { name: 'Wampire Waluigi', image: 'https://mario.wiki.gallery/images/1/12/Waluigi_Wampire.png', stats: { speed: 8, acceleration: 4, weight: 8, handling: 4 } },
+    { name: 'Mariachi Waluigi', image: 'https://mario.wiki.gallery/images/8/8f/Waluigi_Mariachi_MKWorld_Select.png', stats: { speed: 8, acceleration: 4, weight: 8, handling: 4 } },
+    { name: 'Touring Rosalina', image: 'https://mario.wiki.gallery/images/c/c0/Rtourmkworld.png', stats: { speed: 7, acceleration: 5, weight: 7, handling: 5 } },
+    { name: 'Pro Racer Rosalina', image: 'https://mario.wiki.gallery/images/7/7c/Rosalina_Racer.png', stats: { speed: 7, acceleration: 5, weight: 7, handling: 5 } },
+    { name: 'Aero Rosalina', image: 'https://mario.wiki.gallery/images/0/06/Rosalina_Biker.png', stats: { speed: 7, acceleration: 5, weight: 7, handling: 5 } },
+    { name: 'Aurora Rosalina', image: 'https://mario.wiki.gallery/images/4/47/MKW_Rosalina_Aurora_alt.png', stats: { speed: 7, acceleration: 5, weight: 7, handling: 5 } },
+    { name: 'Aero Pauline', image: 'https://mario.wiki.gallery/images/c/ce/Pauline_Aero.png', stats: { speed: 7, acceleration: 5, weight: 7, handling: 5 } },
+    { name: 'Pro Racer Baby Mario', image: 'https://mario.wiki.gallery/images/2/2f/Baby_Mario_Racer.png', stats: { speed: 3, acceleration: 9, weight: 3, handling: 9 } },
+    { name: 'Swimwear Baby Mario', image: 'https://mario.wiki.gallery/images/9/96/Baby_Mario_Swimwear.png', stats: { speed: 3, acceleration: 9, weight: 3, handling: 9 } },
+    { name: 'Work Crew Baby Mario', image: 'https://mario.wiki.gallery/images/2/25/Baby_Mario_Work_Crew.png', stats: { speed: 3, acceleration: 9, weight: 3, handling: 9 } },
+    { name: 'Pro Racer Baby Luigi', image: 'https://mario.wiki.gallery/images/2/25/Baby_Luigi_Racer.png', stats: { speed: 3, acceleration: 9, weight: 3, handling: 9 } },
+    { name: 'Work Crew Baby Luigi', image: 'https://mario.wiki.gallery/images/1/1b/Baby_Luigi_Work_Crew.png', stats: { speed: 3, acceleration: 9, weight: 3, handling: 9 } },
+    { name: 'Touring Baby Peach', image: 'https://mario.wiki.gallery/images/2/27/Bptourmkworld.png', stats: { speed: 3, acceleration: 10, weight: 2, handling: 9 } },
+    { name: 'Pro Racer Baby Peach', image: 'https://mario.wiki.gallery/images/b/bb/Baby_Peach_Racer.png', stats: { speed: 3, acceleration: 10, weight: 2, handling: 9 } },
+    { name: 'Explorer Baby Peach', image: 'https://mario.wiki.gallery/images/7/71/Bpermkworld.png', stats: { speed: 3, acceleration: 10, weight: 2, handling: 9 } },
+    { name: 'Sailor Baby Peach', image: 'https://mario.wiki.gallery/images/1/1b/Baby_Peach_Sailor.png', stats: { speed: 3, acceleration: 10, weight: 2, handling: 9 } },
+    { name: 'Touring Baby Daisy', image: 'https://mario.wiki.gallery/images/7/79/Bdtourmkworld.png', stats: { speed: 3, acceleration: 10, weight: 2, handling: 9 } },
+    { name: 'Pro Racer Baby Daisy', image: 'https://mario.wiki.gallery/images/0/02/Baby_Daisy_Racer.png', stats: { speed: 3, acceleration: 10, weight: 2, handling: 9 } },
+    { name: 'Explorer Baby Daisy', image: 'https://mario.wiki.gallery/images/3/32/Bdermkworld.png', stats: { speed: 3, acceleration: 10, weight: 2, handling: 9 } },
+    { name: 'Sailor Baby Daisy', image: 'https://mario.wiki.gallery/images/9/99/MKWorld_Baby_Daisy_alternate_outfit.png', stats: { speed: 3, acceleration: 10, weight: 2, handling: 9 } },
+    { name: 'Touring Baby Rosalina', image: 'https://mario.wiki.gallery/images/7/75/Brtourmkworld.png', stats: { speed: 3, acceleration: 9, weight: 3, handling: 9 } },
+    { name: 'Pro Racer Baby Rosalina', image: 'https://mario.wiki.gallery/images/8/83/MKWorld_Baby_Rosalina_Pro_Racer_alt.png', stats: { speed: 3, acceleration: 9, weight: 3, handling: 9 } },
+    { name: 'Explorer Baby Rosalina', image: 'https://mario.wiki.gallery/images/5/50/Brermkworld.png', stats: { speed: 3, acceleration: 9, weight: 3, handling: 9 } },
+    { name: 'Sailor Baby Rosalina', image: 'https://mario.wiki.gallery/images/d/d6/Baby_Rosalina_Sailor.png', stats: { speed: 3, acceleration: 9, weight: 3, handling: 9 } },
+    { name: 'Pit Crew Lakitu', image: 'https://mario.wiki.gallery/images/9/92/MKWorld_Lakitu_Pit_Crew_alt.png', stats: { speed: 4, acceleration: 8, weight: 4, handling: 8 } },
+    { name: 'Fisherman Lakitu', image: 'https://mario.wiki.gallery/images/b/bf/MK_World_Lakitu_Fisherman_char_select.png', stats: { speed: 4, acceleration: 8, weight: 4, handling: 8 } },
+    { name: 'Pro Racer Toadette', image: 'https://mario.wiki.gallery/images/9/96/MKWorld_New_Toadette_Costume.png', stats: { speed: 4, acceleration: 8, weight: 4, handling: 8 } },
+    { name: 'Soft Server Toadette', image: 'https://mario.wiki.gallery/images/c/c1/Toadette_Soft_Server_MKWorld_Select.png', stats: { speed: 4, acceleration: 8, weight: 4, handling: 8 } },
+    { name: 'Conductor Toadette', image: 'https://mario.wiki.gallery/images/0/01/MKWorld_Toadette_Costume_2.png', stats: { speed: 4, acceleration: 8, weight: 4, handling: 8 } },
+    { name: 'Explorer Toadette', image: 'https://mario.wiki.gallery/images/6/69/MKWorld_Toadette_Costume_1.png', stats: { speed: 4, acceleration: 8, weight: 4, handling: 8 } },
+    { name: 'Pro Racer Bowser Jr.', image: 'https://mario.wiki.gallery/images/0/05/MKWorld_Bowser_Jr_Pro_Racer_alt.png', stats: { speed: 5, acceleration: 7, weight: 5, handling: 7 } },
+    { name: 'Biker Bowser Jr.', image: 'https://mario.wiki.gallery/images/3/39/Bowser_Jr_Biker.png', stats: { speed: 5, acceleration: 7, weight: 5, handling: 7 } },
+    { name: 'Explorer Bowser Jr.', image: 'https://mario.wiki.gallery/images/7/73/Junior_Explorer.png', stats: { speed: 5, acceleration: 7, weight: 5, handling: 7 } },
+    { name: 'Pro Racer Birdo', image: 'https://mario.wiki.gallery/images/0/06/Birdo_Racer.png', stats: { speed: 6, acceleration: 6, weight: 6, handling: 6 } },
+    { name: 'Vacation Birdo', image: 'https://mario.wiki.gallery/images/6/66/Birdo_Vacation.png', stats: { speed: 6, acceleration: 6, weight: 6, handling: 6 } },
+    { name: 'Pro Racer King Boo', image: 'https://mario.wiki.gallery/images/7/7c/MKWorld_King_Boo_racing_outfit.png', stats: { speed: 7, acceleration: 5, weight: 7, handling: 5 } },
+    { name: 'Aristocrat King Boo', image: 'https://mario.wiki.gallery/images/5/56/King_Boo_Aristocrat.png', stats: { speed: 7, acceleration: 5, weight: 7, handling: 5 } },
+    { name: 'Pirate King Boo', image: 'https://mario.wiki.gallery/images/e/e2/MKWorld_King_Boo_pirate_outfit.png', stats: { speed: 7, acceleration: 5, weight: 7, handling: 5 } },
+    { name: 'Pit Crew Shy Guy', image: 'https://mario.wiki.gallery/images/b/bc/Shy_Guy_Racer.png', stats: { speed: 4, acceleration: 8, weight: 4, handling: 8 } },
+    { name: 'Slope Styler Shy Guy', image: 'https://mario.wiki.gallery/images/8/8d/Shy_Guy_Sloper.png', stats: { speed: 4, acceleration: 8, weight: 4, handling: 8 } },
+    { name: 'All-Terrain Donkey Kong', image: 'https://mario.wiki.gallery/images/b/be/Donkey_Kong_All_Terrain.png', stats: { speed: 8, acceleration: 4, weight: 8, handling: 4 } },
 ];
 
 // Mario Kart vehicles and their images
@@ -103,7 +204,7 @@ const vehicles = [
 ];
 
 // Combine characters and npcs for randomization
-const allCharacters = [...characters, ...npcs];
+const allCharacters = [...characters, ...npcs, ...outfits];
 
 // Get DOM elements
 const characterImage = document.getElementById('character-image');
@@ -154,30 +255,54 @@ function renderStatsGraph(character, vehicle) {
     `;
 }
 
+// Settings logic
+const settingsCog = document.getElementById('settings-cog');
+const settingsPanel = document.getElementById('settings-panel');
+const toggleOutfits = document.getElementById('toggle-outfits');
+const toggleNpcs = document.getElementById('toggle-npcs');
+
+function getActiveCharacters() {
+    let pool = [...characters];
+    if (toggleOutfits.checked) pool = pool.concat(outfits);
+    if (toggleNpcs.checked) pool = pool.concat(npcs);
+    return pool;
+}
+
+settingsCog.addEventListener('click', () => {
+    settingsPanel.classList.toggle('hidden');
+});
+
+document.addEventListener('click', (e) => {
+    if (!settingsPanel.classList.contains('hidden') &&
+        !settingsPanel.contains(e.target) &&
+        e.target !== settingsCog &&
+        !settingsCog.contains(e.target)) {
+        settingsPanel.classList.add('hidden');
+    }
+});
+
+toggleOutfits.addEventListener('change', () => {
+    randomize();
+});
+toggleNpcs.addEventListener('change', () => {
+    randomize();
+});
+
 // Function to randomize character and vehicle
 function randomize() {
-    // Add animation class
     characterImage.classList.add('randomizing');
     vehicleImage.classList.add('randomizing');
-    
-    // Get random character (from allCharacters) and vehicle
-    const randomCharacter = getRandomItem(allCharacters);
+    // Use settings
+    const activeCharacters = getActiveCharacters();
+    const randomCharacter = getRandomItem(activeCharacters);
     const randomVehicle = getRandomItem(vehicles);
-    
-    // Update images and names with a slight delay for animation
-    setTimeout(() => {
-        characterImage.src = randomCharacter.image;
-        characterName.textContent = randomCharacter.name;
-        vehicleImage.src = randomVehicle.image;
-        vehicleName.textContent = randomVehicle.name;
-        
-        // Render stats graph
-        renderStatsGraph(randomCharacter, randomVehicle);
-        
-        // Remove animation class
-        characterImage.classList.remove('randomizing');
-        vehicleImage.classList.remove('randomizing');
-    }, 300);
+    characterImage.src = randomCharacter.image;
+    characterName.textContent = randomCharacter.name;
+    vehicleImage.src = randomVehicle.image;
+    vehicleName.textContent = randomVehicle.name;
+    renderStatsGraph(randomCharacter, randomVehicle);
+    characterImage.classList.remove('randomizing');
+    vehicleImage.classList.remove('randomizing');
 }
 
 // Add click event listener to randomize button
